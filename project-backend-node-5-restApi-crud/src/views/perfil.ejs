@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<h1>
+    perfil de usuario owo
+</h1>
+<ul>
+    <% for (let i = 0; i < usuario.length; i++) { %>
+        <li> 
+            <p>usuario #<%= usuario[i].id %> </p>
+            <%= usuario[i].nombre %>
+            <%= usuario[i].apellido %>
+            <%= usuario[i].edad %> 
+        </li>
+    <% } %>
+</ul>
+
+<%- include('partials/footer') %>
